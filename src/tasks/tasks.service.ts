@@ -47,7 +47,7 @@ export class TasksService {
     status: TaskStatus,
     user: User,
   ): Promise<Task> {
-    const task = await this.getTaskById(id, user);
+    const task: Task = await this.getTaskById(id, user);
     task.status = status;
     await task.save();
     return task;
