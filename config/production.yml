@@ -1,2 +1,4 @@
+server:
+  origin: 'https://example.com'
 db:
   synchronize: false
